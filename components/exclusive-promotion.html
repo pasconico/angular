@@ -1,11 +1,15 @@
 <div class="exclusive-promotion-container container">
     <div class="d-flex justify-content-between align-items-center mt-4">
-        <h2 class="" id="exclusive-promotion" data-aos="zoom-in-right" data-aos-duration="500" data-aos-easing="ease-in-out">Exclusive Promotion</h2>
-        <h6 class=""  data-aos="zoom-in-left" data-aos-duration="500" data-aos-easing="ease-in-out"><a href="#!" ng-click="clickButton()"><small>View More</small></a></h6>
+        <h2 class="" id="exclusive-promotion" data-aos="zoom-in-right" data-aos-duration="500"
+            data-aos-easing="ease-in-out">Exclusive Promotion</h2>
+        <h6 class="" data-aos="zoom-in-left" data-aos-duration="500" data-aos-easing="ease-in-out"><a href="#!"
+                ng-click="clickButton()"><small>View More</small></a></h6>
     </div>
     <div class="promotion-image-container">
-        <div class="promotion-item" >
-            <div ng-repeat="promotions in promotionList" style="position:relative;" class="promotions" data-aos="zoom-in" data-aos-duration="" data-aos-easing="ease-in-out" ng-init="setAOSDelayPromotions($index)">
+        <div class="promotion-item">
+            <div ng-repeat="promotions in promotionList" style="position:relative;" class="promotions"
+                data-aos="zoom-in" data-aos-duration="" data-aos-easing="ease-in-out"
+                ng-init="setAOSDelayPromotions($index)">
                 <img class="promo-image mt-3" ng-src="{{promotions.promoImage}}" alt="" />
             </div>
         </div>
